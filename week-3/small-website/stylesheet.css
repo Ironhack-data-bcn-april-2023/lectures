@@ -1,0 +1,17 @@
+body {
+  background-color: aqua;
+}
+
+p {
+  color: yellow;
+}
+
+p.paragraph-2 {
+  color: brown;
+}
+
+p.italic-praggraph-anything {
+  color: cornflowerblue;
+  font-weight: 100;
+  font-style: italic;
+}
