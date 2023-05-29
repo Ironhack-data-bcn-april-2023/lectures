@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="alcohol <= 10.02\ngini = 0.68\nsamples = 3673\nvalue = [15, 125, 1092, 1649, 659, 129, 4]\nclass = l", fillcolor="#d4f9f9"] ;
+1 [label="volatile acidity <= 0.24\ngini = 0.61\nsamples = 1568\nvalue = [7, 63, 764, 609, 105, 20, 0]\nclass = a", fillcolor="#dffbe2"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.63\nsamples = 527\nvalue = [2, 8, 142, 277, 79, 19, 0]\nclass = l", fillcolor="#baf6f5"] ;
+1 -> 2 ;
+3 [label="gini = 0.54\nsamples = 1041\nvalue = [5, 55, 622, 332, 26, 1, 0]\nclass = a", fillcolor="#aef4b6"] ;
+1 -> 3 ;
+4 [label="alcohol <= 11.72\ngini = 0.66\nsamples = 2105\nvalue = [8, 62, 328, 1040, 554, 109, 4]\nclass = l", fillcolor="#c1f7f6"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="gini = 0.64\nsamples = 1401\nvalue = [6, 56, 292, 734, 272, 40, 1]\nclass = l", fillcolor="#b0f5f3"] ;
+4 -> 5 ;
+6 [label="gini = 0.64\nsamples = 704\nvalue = [2, 6, 36, 306, 282, 69, 3]\nclass = l", fillcolor="#f4fefd"] ;
+4 -> 6 ;
+}
